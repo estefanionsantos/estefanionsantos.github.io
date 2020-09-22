@@ -1,4 +1,4 @@
 function getLastVideo()
 {
-    return "https://youtu.be/pAQ0_-us3EA";
+    return "https://youtu.be/VHu-fbcWCV4";
 }
