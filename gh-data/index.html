@@ -3,14 +3,57 @@
     <head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>GitHub Data</title>
+      <title>GitHub Data</title>
+      <style>
+          *{margin: 0; padding: 0}
+
+          .container{ width: 94%; margin: 0 auto; }
+          .box{
+              width: 100%; float: left;
+              margin: 0 10px 10px 0;
+              text-align: left;
+          }
+
+          .box{grid-area: box;}
+          .box{min-height: 200px;}
+          .box .title{ width: 100%; color: #2F80ED; font-weight: bold;  padding-top: 15px; padding-bottom: 10px; float: left}
+          .box .image{ width: 100%; float: left}
+          .contributions{ margin-bottom: 50px}
+
+          #top{width: 100%; float: left; margin-bottom: 20px}
+          #top h1{ color: #2F80ED}
+
+          @media (min-width: 768px) { .box{width: 48%} }
+          @media (min-width: 768px) { .box{width: 48%} }
+          @media (min-width: 968px) { .box{width: 28%} }
+          @media (min-width: 1280px) { .box{width: 23%} }
+      </style>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LPSBHG2ZT"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9LPSBHG2ZT');
+      </script>
     </head>
 <body>
-    <p>
-        <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=estefanionsantos&layout=compact&langs_count=20&theme=dracula%20%22most%20used%22" alt="estefanionsantos" />
+    <div class="container">
+        <div id="top">
+            <h1>Most used languages</h1>
+        </div>
+    <p class="contributions">
+        <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=estefanionsantos" alt="estefanionsantos" />
     </p>
+    <div class="box">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=estefanionsantos&layout=compact&langs_count=20&theme=dracula%20%22most%20used%22" alt="estefanionsantos" />
+    </div>
+    <div class="box">
+        <div class="title">Oct 2024</div>
+        <img src="asset/img/2410-most-used-languages.png" alt="oct 2024"/>
+    </div>
+    </div>
     <p>
-        <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=estefanionsantos&" alt="estefanionsantos" />
     </p>
 </body>
 </html>
